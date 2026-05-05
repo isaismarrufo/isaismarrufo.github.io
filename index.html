@@ -6,6 +6,7 @@
   <title>Isais Marrufo</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <nav class="nav">
     <h1 class="site-name">Isais Marrufo</h1>
@@ -22,6 +23,7 @@
   </nav>
 
   <main>
+    <!-- About / Intro -->
     <section id="about" class="intro">
       <div class="portrait-card">
         <img src="assets/profile.jpg" alt="Isais Marrufo headshot" class="portrait" />
@@ -50,6 +52,7 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="projects-section">
       <h2>Projects</h2>
 
@@ -67,7 +70,7 @@
           <h3>Smart Adaptive Media System</h3>
           <p>
             Distributed IoT media-control system using Raspberry Pi, MQTT,
-            real-time audio detection, and VLC control.
+            real-time audio detection, network monitoring, and VLC control.
           </p>
           <a href="https://github.com/isaismarrufo/smart-adaptive-media-system" target="_blank">View Project</a>
         </article>
@@ -92,6 +95,7 @@
       </div>
     </section>
 
+    <!-- Resume -->
     <section id="resume" class="resume-section">
       <h2>Resume</h2>
 
@@ -108,6 +112,7 @@
       </iframe>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="skills-section">
       <h2>Skills</h2>
 
@@ -144,6 +149,7 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="contact-section">
       <div class="contact-left">
         <h2>Let's Connect</h2>
@@ -159,27 +165,28 @@
         <input type="email" name="email" placeholder="Email" required />
         <input type="text" name="subject" placeholder="Subject" required />
         <textarea name="message" placeholder="Write your message here..." required></textarea>
+
+        <!-- Helps Formspree label the email subject -->
+        <input type="hidden" name="_subject" value="New portfolio contact message" />
+
         <button type="submit">Send Message</button>
       </form>
     </section>
 
+    <!-- Interactive Map -->
     <section id="map" class="map-section">
-      <h2>USC Viterbi School of Engineering</h2>
-      <p>University of Southern California · Los Angeles, California</p>
+      <iframe
+        src="https://www.google.com/maps?q=USC%20Viterbi%20School%20of%20Engineering%2C%203710%20McClintock%20Ave%2C%20Los%20Angeles%2C%20CA%2090089&output=embed"
+        width="100%"
+        height="430"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
 
-      <div class="map-card">
-        <iframe
-          src="https://www.google.com/maps?q=USC%20Viterbi%20School%20of%20Engineering%2C%203710%20McClintock%20Ave%2C%20Los%20Angeles%2C%20CA%2090089&output=embed"
-          width="100%"
-          height="420"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
+      <div class="map-actions">
         <a
-          class="map-link"
           href="https://www.google.com/maps/search/?api=1&query=USC%20Viterbi%20School%20of%20Engineering%203710%20McClintock%20Ave%20Los%20Angeles%20CA%2090089"
           target="_blank">
           Open in Google Maps
