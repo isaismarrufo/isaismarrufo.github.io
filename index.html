@@ -12,7 +12,7 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="assets/resume.pdf">Resume</a>
+      <a href="#resume">Resume</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
       <a href="https://linkedin.com/in/isaismarrufo" target="_blank">LinkedIn</a>
@@ -40,7 +40,7 @@
 
         <div class="button-row">
           <a class="button" href="#projects">Projects</a>
-          <a class="button" href="assets/resume.pdf">Resume</a>
+          <a class="button" href="#resume">Resume</a>
         </div>
       </div>
     </section>
@@ -51,28 +51,49 @@
       <div class="project-grid">
         <article class="project-card">
           <h3>FPGA-Based Interactive System</h3>
-          <p>Verilog system on the Nexys A7 using FSM control, VGA output, LFSR sequence generation, and hardware validation.</p>
+          <p>
+            Verilog system on the Nexys A7 using FSM control, VGA output,
+            LFSR sequence generation, and hardware validation.
+          </p>
           <a href="https://github.com/isaismarrufo/fpga-control-system-nexys-a7" target="_blank">View Project</a>
         </article>
 
         <article class="project-card">
           <h3>Smart Adaptive Media System</h3>
-          <p>Distributed IoT media-control system using Raspberry Pi, MQTT, real-time audio detection, and VLC control.</p>
+          <p>
+            Distributed IoT media-control system using Raspberry Pi, MQTT,
+            real-time audio detection, and VLC control.
+          </p>
           <a href="https://github.com/isaismarrufo/smart-adaptive-media-system" target="_blank">View Project</a>
         </article>
 
         <article class="project-card">
           <h3>C++ To-Do List Application</h3>
-          <p>Command-line C++ application with CRUD operations, file persistence, and object-oriented design.</p>
+          <p>
+            Command-line C++ application with CRUD operations, file persistence,
+            and object-oriented design.
+          </p>
           <a href="https://github.com/isaismarrufo/todo-list-cpp" target="_blank">View Project</a>
         </article>
 
         <article class="project-card">
           <h3>Casino Simulation</h3>
-          <p>Go command-line casino simulation with multiple game states, balance tracking, and user input handling.</p>
+          <p>
+            Go command-line casino simulation with multiple game states,
+            balance tracking, and user input handling.
+          </p>
           <a href="https://github.com/isaismarrufo/casino-simulation-go" target="_blank">View Project</a>
         </article>
       </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+      <h2>Resume</h2>
+      <p class="resume-note">
+        View my resume below or open the PDF directly.
+      </p>
+      <a class="resume-link" href="assets/resume.pdf">Open Resume PDF</a>
+      <iframe src="assets/resume.pdf" class="resume-frame" title="Isais Marrufo Resume"></iframe>
     </section>
 
     <section id="skills" class="skills-section">
@@ -120,9 +141,17 @@
         <p><a href="https://linkedin.com/in/isaismarrufo" target="_blank">linkedin.com/in/isaismarrufo</a></p>
       </div>
 
-      <form class="contact-form" action="mailto:isaismarrufo@gmail.com" method="GET">
+      <!-- 
+        IMPORTANT:
+        Replace YOUR_FORM_ID with your real Formspree ID.
+        Go to https://formspree.io, create a free form, then paste the endpoint here.
+        Example: action="https://formspree.io/f/abcdwxyz"
+      -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
         <input type="text" name="subject" placeholder="Subject" required />
-        <textarea name="body" placeholder="Write your message here..." required></textarea>
+        <textarea name="message" placeholder="Write your message here..." required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
