@@ -139,7 +139,7 @@ body {
   margin: 0 0 42px;
 }
 
-/* Projects */
+/* Projects and Skills */
 
 .project-grid,
 .skills-grid {
@@ -177,6 +177,10 @@ body {
   text-decoration: underline;
 }
 
+.skill-box p {
+  margin-bottom: 0;
+}
+
 /* Resume */
 
 .resume-note {
@@ -194,12 +198,6 @@ body {
   height: 820px;
   border: 1px solid #ccc;
   background: white;
-}
-
-/* Skills */
-
-.skill-box p {
-  margin-bottom: 0;
 }
 
 /* Contact */
@@ -255,7 +253,7 @@ button:hover {
   background: #333;
 }
 
-/* Full-Width Interactive Map */
+/* Full-width interactive map */
 
 .map-section {
   width: 100%;
@@ -264,7 +262,7 @@ button:hover {
   background: #e9e9e9;
 }
 
-.map-section iframe {
+.map-frame {
   display: block;
   width: 100%;
   height: 430px;
@@ -328,7 +326,7 @@ footer {
     height: 600px;
   }
 
-  .map-section iframe {
+  .map-frame {
     height: 360px;
   }
 }
