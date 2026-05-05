@@ -45,11 +45,11 @@ body {
   text-decoration: underline;
 }
 
-/* Intro / About */
+/* Home / Intro */
 
 .intro {
   max-width: 980px;
-  margin: 60px auto 110px;
+  margin: 60px auto 120px;
   padding: 0 24px;
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -120,26 +120,32 @@ body {
   box-shadow: 2px 2px 0 #777;
 }
 
-/* Main Sections */
+/* Page Sections */
 
-.projects-section,
-.skills-section,
-.resume-section {
+.page-section,
+.resume-page-section {
   max-width: 980px;
-  margin: 0 auto 90px;
+  margin: 60px auto 120px;
   padding: 0 24px;
 }
 
-.projects-section h2,
-.skills-section h2,
-.resume-section h2,
+.page-section h2,
+.resume-page-section h2,
 .contact-section h2 {
   font-size: 40px;
   line-height: 1.1;
   margin: 0 0 42px;
+  text-align: center;
 }
 
-/* Projects and Skills */
+.section-intro {
+  max-width: 720px;
+  margin: -20px auto 42px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Projects */
 
 .project-grid,
 .skills-grid {
@@ -162,6 +168,13 @@ body {
   font-size: 22px;
 }
 
+.project-tag {
+  font-size: 14px;
+  font-style: italic;
+  margin: 0 0 8px;
+  color: #444;
+}
+
 .project-card a,
 .contact-left a,
 .resume-link {
@@ -180,6 +193,10 @@ body {
 }
 
 /* Resume */
+
+.resume-page-section {
+  text-align: center;
+}
 
 .resume-note {
   margin-top: -20px;
@@ -202,12 +219,16 @@ body {
 
 .contact-section {
   max-width: 980px;
-  margin: 120px auto 100px;
+  margin: 80px auto 100px;
   padding: 0 24px;
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 70px;
   align-items: start;
+}
+
+.contact-section h2 {
+  text-align: center;
 }
 
 .contact-left {
@@ -218,6 +239,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 26px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
 }
 
 input,
@@ -303,6 +330,10 @@ footer {
   .contact-section {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 
   .button-row {
