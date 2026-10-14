@@ -22,8 +22,8 @@ This portfolio highlights my background, technical skills, resume, and selected 
 
 - FPGA-Based Interactive System
 - Smart Adaptive Media System
+- Dual-Sensor Speed Trap System
 - C++ To-Do List Application
-- Casino Simulation
 
 ## Technologies Used
 
