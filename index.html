@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; style-src 'self'; img-src 'self'; frame-src 'self' https://www.google.com; object-src 'self'; base-uri 'none'; form-action https://formspree.io; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Isais Marrufo</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,8 +19,8 @@
       <a href="resume.html">Resume</a>
       <a href="skills.html">Skills</a>
       <a href="index.html#contact">Contact</a>
-      <a href="https://linkedin.com/in/isaismarrufo" target="_blank">LinkedIn</a>
-      <a href="https://github.com/isaismarrufo" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/isaismarrufo" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/isaismarrufo" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </nav>
 
@@ -58,8 +60,8 @@
 
         <p>Los Angeles, California</p>
         <p><a href="mailto:isaismarrufo@gmail.com">isaismarrufo@gmail.com</a></p>
-        <p><a href="https://github.com/isaismarrufo" target="_blank">github.com/isaismarrufo</a></p>
-        <p><a href="https://linkedin.com/in/isaismarrufo" target="_blank">linkedin.com/in/isaismarrufo</a></p>
+        <p><a href="https://github.com/isaismarrufo" target="_blank" rel="noopener noreferrer">github.com/isaismarrufo</a></p>
+        <p><a href="https://linkedin.com/in/isaismarrufo" target="_blank" rel="noopener noreferrer">linkedin.com/in/isaismarrufo</a></p>
       </div>
 
       <form class="contact-form" action="https://formspree.io/f/mrejqkvo" method="POST">
@@ -72,6 +74,7 @@
         <textarea name="message" placeholder="Write your message here..." required></textarea>
 
         <input type="hidden" name="_subject" value="New portfolio contact message" />
+        <input class="form-honeypot" type="text" name="_gotcha" hidden tabindex="-1" autocomplete="off" aria-hidden="true" />
 
         <button type="submit">Send Message</button>
       </form>
@@ -83,7 +86,7 @@
         src="https://www.google.com/maps?q=USC%20Viterbi%20School%20of%20Engineering%20Los%20Angeles%20CA&z=16&output=embed"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+        referrerpolicy="strict-origin-when-cross-origin">
       </iframe>
     </section>
   </main>
